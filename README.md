@@ -8,4 +8,5 @@ A simple To-Do web application showcasing full-stack development skills. The bac
 - CRUD operations: Users are able to create, read, update, and delete their task data.
 - Task Management: Users are able to mark tasks as completed, as well as organize tasks by due dates and times. 
 
-## Installation
+## Demo Video
+[Click here to watch the demo video for the To-Do app](https://drive.google.com/file/d/17k3_JhXAY3nFflf1R4lvKKo76m6IaeSX/view?usp=sharing)
