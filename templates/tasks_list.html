@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <meta charset ="utf-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <h1 class="tasklist-title">TODOs  </h1>
+        <ul>
+            {% for id, taskdata in task_dict.items()%}
+                {%if taskdata['taskname']%}
+                <form action="/completed" method="POST">
+                 <li><div id="task-tasklist">
+                    <label id="{{id}}"for="status">{{taskdata['taskname']}} - {{taskdata['due_date']}}</label>
+                    <button class="completed-button" type="submit">Did it!</button>
+                    <input type="hidden" name="taskid" value="{{id}}">
+                    
+                     
+    
+                </div></li>
+                </form>
+               
+                
+                {% else %}
+                    <h3>No TODOs</h3>
+                {%endif%}
+            {% endfor %}
+            
+            
+        </ul>
+        <a class="addbutton2link"href="http://127.0.0.1:5001/welcome">
+            <button class="addbutton2">+</button>
+        </a>
+      
+        
+    </body>
+</html>

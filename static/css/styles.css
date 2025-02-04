@@ -1,0 +1,300 @@
+body{
+    background-color: black;
+    color: aliceblue;
+   
+    height:1000px;
+    
+}
+.create-block{
+    display:block;
+    margin:auto;
+    margin-bottom: 20px;
+
+
+}
+#task_form{
+
+    border: 3px solid white;
+    width: 350px;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:auto;
+    margin-top: 30px;
+    
+
+
+}
+#welcome-title, #add-text{
+    text-align: center;
+}
+.add-button{
+    width: 200px;
+    height: 200px;
+    font-size: 180px;
+    color:black;
+    background-color: greenyellow;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+     margin-top: 35px;
+     cursor:pointer;
+   
+
+   
+}
+
+
+#createblock-name{
+    display:block;
+    text-align: center;
+}
+#create_button{
+    display:block;
+    margin:auto;
+    width:60px;
+    height:50px;
+}
+.view-tasks{
+    display:block;
+    text-align: center;
+    font-size: x-large;
+
+
+    color:red;
+}
+.view-tasks:hover{
+    color:azure;
+}
+.view-tasks:active{
+    color:greenyellow;
+}
+.tasklist-title{
+    text-align: center;
+    color:greenyellow;
+}
+.today-container{
+    font-size:large;
+    display: block;
+   
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px dotted gray;
+    
+
+}
+.tomorrow-container{
+    font-size:large;
+    display: block;
+   
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px dotted gray;
+   
+
+}
+.later-container{
+    font-size:large;
+    display: block;
+   
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px dotted gray;
+   
+
+}
+#task-tasklist{
+    display: block;
+    margin: auto;
+    width:30%;
+    font-size: medium;
+    white-space: nowrap;
+    padding-top: 20px;
+    border: 1px dotted gray;
+    width: 600px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+
+}
+.menubar-container{
+    display:block;
+    border: 1px solid white;
+    width:150px;
+    margin-top: 50px;
+}
+.today-container:hover{
+    color:red;
+}
+.tomorrow-container:hover{
+    color:red;
+}
+.later-container:hover{
+    color:red;
+}
+.today-container:active{
+    color:greenyellow;
+}
+.tomorrow-container:active{
+    color:greenyellow;
+}
+.later-container:active{
+    color:greenyellow;
+}
+.checkboxes{
+    width: 50px;
+   
+    
+   
+    
+}
+.register-title{
+    display: block;
+    text-align: center;
+    color:greenyellow;
+    
+}
+.new{
+    display:block;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height:30px;
+}
+.newlabel{
+    display: block;
+    text-align: center;
+
+}
+.createaccount-title{
+    display: block;
+    text-align: center;
+    
+}
+.submitorsignin{
+    display:block;
+    margin: auto;
+    width:20%;
+    white-space: nowrap;
+    margin-top: 50px;
+}
+.linkforsignin{
+    color:red;
+
+}
+.linkforsignin:hover{
+    color:white;
+}
+.linkforsignin:active{
+    color:greenyellow;
+}
+.signup:hover{
+    color:red;
+}
+.login-title{
+    display: block;
+    text-align: center;
+    color:greenyellow;
+
+}
+.login-label{
+    display: block;
+    text-align: center;
+
+}
+.returninginfo{
+    display:block;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height:30px;
+
+}
+.login{
+    display:block;
+    margin: auto;
+    width:20%;
+    white-space: nowrap;
+    margin-top: 50px;
+
+}
+.login:hover{
+    color:red;
+}
+.completed-button:hover{
+    background-color: greenyellow;
+    
+}
+.completed-button:active{
+    background-color: red;
+}
+.addbutton2{
+    display: block;
+    position: fixed;
+    top: 1px;
+    right: 480px;
+    z-index: 1000;
+   
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    margin-left: 800px;
+    border-radius: 100% ;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+    border: none;
+    padding-bottom: 10px;
+    
+    
+
+
+    
+    
+}
+.completed-button{
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.addbutton2link{
+
+    text-decoration: none;
+}
+.addbutton2:hover{
+    color: greenyellow;
+
+}
+.addbutton2:active{
+    color:red;
+}
+.logout{
+    display: block;
+    position:fixed;
+    top:1px;
+    right:10px;
+    z-index: 1000;
+    width: 70px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: medium;
+    cursor: pointer;
+
+    
+}
+.logout:hover{
+    color:red;
+}
+.logout:active{
+    color:greenyellow;
+}
+.errormessage{
+    display: block;
+    text-align: center;
+    color:red;
+}

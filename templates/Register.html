@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 class="register-title">TODOs</h1>
+        <h2 class="createaccount-title">Create an Account:</h2>
+
+        {%with messages= get_flashed_messages(with_categories=true)%}
+            {%if messages%}
+                <ul>
+                    {%for category, message in messages%}
+                        <li class="errormessage">{{message}}</li>
+                    {%endfor%}
+                </ul>
+            {%endif%}
+        {%endwith%}
+        
+        <form class="createanaccount-form" action="/submit" method="POST">
+            
+            <label class="newlabel" for="username">Username: </label>
+            <input class="new"type="text" placeholder="Create a username" name="username" id="username" required>
+            <label class="newlabel" for="password">Password: </label>
+            <input class="new" type="password" name="password" id="password" required>
+            <div class="submitorsignin">
+                <button class="signup" type="submit">Sign Up!</button>
+                <label for="signin">Already have an account?</label>
+                <a href="http://127.0.0.1:5001/login" class="linkforsignin">Sign in here!</a>
+            </div>
+            <!--<button class="signup" type="submit">Sign Up!</button>
+            <label for="signin">Already have an account?</label>
+            <a href="http://127.0.0.1:5001/login" class="button">Sign in here!</a>-->
+        </form>
+
+        </form>
+    </body>
+</html>

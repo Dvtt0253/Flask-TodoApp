@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="welcome-title">What's on your To-Do list, {{ username }}?</h1>
+        <p id="add-text">Add A Task </p>
+        <button onclick="showForm()" class="add-button" id="add-button">+</button>
+        <a href="http://127.0.0.1:5001/TaskList" class="view-tasks" id="view-link">
+            <h3 class="view-tasks">  View Your TODOs-List</h3>
+        </a>
+        
+
+
+        <div id="task_form" style="display:none;">
+            <form action="/Create", method="POST">
+                <label for="name" id="createblock-name">Task Name:</label>
+                <input type="text" name="task_name" id="name" placeholder="Walk the dog" class="create-block" required>
+                <label for="datetime" id="createblock-name">Complete By: </label>
+                <input type="datetime-local" id="due-date" name="due-date" class="create-block" required>
+                
+                <button type="submit" id="create_button">Create</button>
+                
+
+
+            </form>
+
+
+            <script>
+                function showForm() {
+                    var form = document.getElementById("task_form");
+                    form.style.display="block";
+                }
+            </script>
+
+
+        </div>
+        <a href="http://127.0.0.1:5001/login">
+            <button class="logout">Logout</button>
+        </a>
+        
+
+    </body>
+
+</html>
